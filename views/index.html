@@ -1,7 +1,10 @@
 {% extends 'layout.html' %}
 
 {% block title %}ziroom{% endblock %}
-
+{% block link %}
+  {% parent %}
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+{% endblock %}
 {% block header %}
   <div class="mycarousel">
     {% parent %}
@@ -21,7 +24,7 @@
         <div class="headlines">
           <h2>欢迎使用</h2>
           <p>ziroom会给您提供独一无二的家政服务</p>
-          </div>
+        </div>
         <ol class="carousel-indicators">
           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
           <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -33,23 +36,27 @@
 {% endblock %}
 
 {% block content %}
-  <div id="content">
+  <div id="content clearfix">
     <div class="main-container container-fluid">
       <div class="col-md-3 col-sm-6 server clear-server">
-        <i class="img"></i>
-        <div>保洁预约</div>
+        <img src="../images/image.jpg" />
+        <div class="caption">保洁预约</div>
+        <p>保洁预约保洁预约保洁预约保洁预约保洁预约保洁预约保洁预约保洁预约保洁预约</p>
       </div>
       <div class="col-md-3 col-sm-6 server maintain-server">
-        <i class="img"></i>
-        <div>日常维修</div>
+        <img src="../images/image.jpg" />
+        <div class="caption">日常维修</div>
+        <p>保洁预约保洁预约保洁预约保洁预约保洁预约保洁预约保洁预约保洁预约保洁预约</p>
       </div>
       <div class="col-md-3 col-sm-6 server recyc-server">
-        <i class="img"></i>
-        <div>废物回收</div>
+        <img src="../images/image.jpg" />
+        <div class="caption">废物回收</div>
+        <p>保洁预约保洁预约保洁预约保洁预约保洁预约保洁预约保洁预约保洁预约保洁预约</p>
       </div>
       <div class="col-md-3 col-sm-6 server pay-server">
-        <i class="img"></i>
-        <div>缴费</div>
+        <img src="../images/image.jpg" />
+        <div class="caption">缴费</div>
+        <p>保洁预约保洁预约保洁预约保洁预约保洁预约保洁预约保洁预约保洁预约保洁预约</p>
       </div>
     </div>
   </div>
